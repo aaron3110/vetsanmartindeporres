@@ -118,7 +118,7 @@ a.enlace.empresa:hover {
 .banner {
     position: relative;
     min-height: 110vh;
-    background-image: url('Consejos.png');
+    background-image: url('Consejos.jpg');
     background-size: cover; 
     background-repeat: no-repeat; 
     background-position: center; 
