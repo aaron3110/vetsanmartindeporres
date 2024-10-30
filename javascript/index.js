@@ -54,6 +54,7 @@ var swiper = new Swiper(".slide-content", {
     },
 });
 
+
 document.addEventListener('DOMContentLoaded', (event) => {
     const videos = document.querySelectorAll('.historias-container video');
 
