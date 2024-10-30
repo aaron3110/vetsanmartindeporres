@@ -58,6 +58,14 @@ var swiper = new Swiper(".slide-content", {
 document.addEventListener('DOMContentLoaded', (event) => {
     const videos = document.querySelectorAll('.historias-container video');
 
+    // Añadir evento 'ended' a cada video para reproducir el siguiente
+    videos.forEach((video, index) => {
+        video.addEventListener('ended', () => {
+            const nextVideo = videos[(index + 1) % videos.length];
+            nextVideo.play();
+        });
+    });
+
     // Pausar otros videos cuando uno se reproduce
     videos.forEach(video => {
         video.addEventListener('play', function() {
@@ -68,12 +76,4 @@ document.addEventListener('DOMContentLoaded', (event) => {
             });
         });
     });
-
-    // Reproducir el siguiente video cuando uno termina
-    for (let i = 0; i < videos.length; i++) {
-        videos[i].addEventListener('ended', () => {
-            const nextVideo = videos[(i + 1) % videos.length];
-            nextVideo.play();
-        });
-    }
 });
