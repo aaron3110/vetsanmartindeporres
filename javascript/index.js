@@ -53,3 +53,13 @@ var swiper = new Swiper(".slide-content", {
         },
     },
 });
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    const videos = document.querySelectorAll('.historias-container video');
+    for (let i = 0; i < videos.length; i++) {
+        videos[i].addEventListener('ended', () => {
+            const nextVideo = videos[(i + 1) % videos.length];
+            nextVideo.play();
+        });
+    }
+});
