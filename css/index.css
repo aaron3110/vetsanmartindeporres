@@ -109,10 +109,9 @@ a.enlace.empresa {
     padding-left: 35px;
 }
 
-a.enlace.empresa:hover {
-    color: white; 
+a.enlace:hover {
+    transform: scale(1.2); /* Increase size on hover */
 }
-
 
 .banner {
     position: relative;
@@ -146,7 +145,6 @@ a.enlace.empresa:hover {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
 
 .banner .content-banner {
     position: relative; 
