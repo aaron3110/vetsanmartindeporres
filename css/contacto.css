@@ -213,70 +213,7 @@ body {
     color: white;
     font-size: 40px;
     margin-bottom: 5px;
-}
-
-.contact-left-title hr{
-    border: none;
-    width: 120px;
-    height: 5px;
-    background-color: white;
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
-
-.contact-inputs{
-    width: 400px;
-    height: 50px;
-    border: none;
-    outline: none;
-    padding-left: 25px;
-    font-weight: 500;
-    color: #666;
-    border-radius: 50px;
-}
-
-.contact-left textarea{
-    height: 140px;
-    padding-top: 15px;
-    border-radius: 20px;
-}
-
-.contact-inputs:focus{
-    border: 2px solid #4070F4;
-}
-
-.contact-inputs::placeholder{
-    color: #a9a9a9;
-}
-
-.contact-left button{
-    display: flex;
-    align-items: center;
-    padding: 15px 30px;
-    font-size: 16px;
-    color: #fff;
-    gap: 10px;
-    border: none;
-    border-radius: 50px;
-    background-color: #0093E9;
-    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);    
-}
-
-.contact-left button img{
-    height: 15px;
-}
-
-.contact-right img{
-    width: 500px;
-}
-
-@media (max-width:800px) {
-    .contact-inputs{
-        width: 80vw;
-    }
-    .contact-right{
-        display: none;
-    }
+    text-align: center;
 }
 
 
@@ -590,67 +527,89 @@ body {
 }
 
 @media (max-width: 768px) {
-    .footer {
+    header {
         padding: 20px;
-        margin-top: 50%;
-    }
-
-    .footer-content {
         flex-direction: column;
         align-items: center;
     }
 
-    .footer-column {
-        margin: 10px 0;
+    .container-navbar {
+        justify-content: center;
     }
 
-    .social-icon__link {
-        font-size: 1.5rem;
-        margin: 0 5px;
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
     }
 
-    .menu__link {
-        font-size: 1rem;
+    .navbar ul li {
+        margin: 5px 0;
     }
 
-    .footer p {
-        font-size: 0.9rem;
+    .banner {
+        min-height: 60vh;
+        padding: 20px;
+        margin-top: 0;
     }
 
-    .company-photo img {
-        max-width: 80%;
+    .banner .content-banner {
+        padding-left: 0;
     }
+
+    .banner .content-banner p {
+        font-size: 24px;
+    }
+
+    .banner .content-banner h2 {
+        font-size: 18px;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        font-size: 34px;
+    }
+
+    .contact-left {
+        align-items: center;
+    }
+
+    .contact-left-title h2 {
+        font-size: 42px;
+    }
+    .map-section h2{
+        font-size: 42px;   
+    }
+    .calendario {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .calendario-titulo {
+        font-size: 34px;
+        padding-right: 0;
+        text-align: center;
+        margin-bottom: 20px; /* Añade margen inferior para separar del calendario */
+    }
+
+    .wrapper {
+        width: 90%;
+        margin-top: 0; /* Ajusta el margen superior si es necesario */
+    }
+
+ /* Centra los enlaces de redes sociales */
+ .social-media {
+    justify-content: center;
 }
 
-@media (max-width: 480px) {
-    .footer {
-        padding: 10px;
-        margin-top: 60%;
-    }
-
-    .footer-content {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .footer-column {
-        margin: 10px 0;
-    }
-
-    .social-icon__link {
-        font-size: 1.2rem;
-        margin: 0 3px;
-    }
-
-    .menu__link {
-        font-size: 0.9rem;
-    }
-
-    .footer p {
-        font-size: 0.8rem;
-    }
-
-    .company-photo img {
-        max-width: 100%;
-    }
+.footer p {
+    text-align: center;
+}
+html, body {
+    overflow-x: hidden; 
+    margin: 0;
+    padding: 0;
+}
 }
