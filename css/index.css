@@ -44,7 +44,6 @@ body, html {
     height: 100%;
     width: 100%;
     font-family: "Poppins", sans-serif;
-    overflow-x: hidden;
 }
 
 header {
@@ -110,19 +109,18 @@ a.enlace.empresa {
     padding-left: 35px;
 }
 
-a.enlace:hover {
-    transform: scale(1.2); /* Increase size on hover */
+a.enlace.empresa:hover {
+    color: white; 
 }
-
 .side-menu {
     position: fixed;
     top: 0;
     left: -250px;
     width: 250px;
     height: 100%;
-    background: #141E30; 
-    background: -webkit-linear-gradient(to right, #243B55, #141E30); 
-    background: linear-gradient(to right, #243B55, #141E30); 
+    background: #141E30;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     transition: left 0.3s ease;
     z-index: 1000;
     display: none; 
@@ -144,6 +142,13 @@ a.enlace:hover {
     color: white;
     text-decoration: none;
     font-size: 18px;
+}
+
+.side-menu.open {
+    display: flex;
+    left: 0; 
+    transition: left 0.3s ease;
+    animation: slideIn 0.3s forwards;
 }
 
 .side-menu.open {
@@ -203,6 +208,7 @@ a.enlace:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+
 .banner .content-banner {
     position: relative; 
     z-index: 2; 
@@ -226,10 +232,6 @@ a.enlace:hover {
     font-weight: bold;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-}
 
 .navbar .menu .enlace.active {
     color: #007bff;
@@ -348,6 +350,11 @@ nav ul {
     z-index: -1;
 }
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 .doctor{
     padding: 80px 0;
@@ -481,6 +488,7 @@ nav ul {
 .swiper-pagination-bullet-active{
     background-color: #4070F4;
 }
+
 
 .Nuestra_Experiencia::before {
     content: '';
@@ -676,7 +684,6 @@ body {
     bottom: 20px;
     animation: animate 3s linear infinite;
 }
-
 @keyframes animateWaves {
     0% {
         background-position-x: 1000px;
@@ -698,6 +705,44 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+html, body {
+    overflow-x: hidden; 
+    margin: 0;
+    padding: 0;
+}
+@media (max-width: 768px) {
+    .container-navbar {
+        display: none;
+    }
+    .mobile-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 10px 145px;
+    }
+    .mobile-nav {
+        display: block;
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+
+    .side-menu {
+        width: 200px;
+    }
+}
+
+
+@media (min-width: 769px) {
+    .mobile-nav {
+        display: none;
+    }
+
+    .side-menu {
+        display: none;
+    }
 }
 @media screen and (max-width: 768px) {
     /* Ajustes de la cabecera */
@@ -735,6 +780,13 @@ body {
     .nuestra-vision-objetivos .content-box {
         flex-direction: column;
     }
+    .slide-content{
+        margin: 0 10px;
+    }
+    .swiper-navBtn{
+        display: none;
+    }
+    
     .experiencia-content {
         flex-direction: column; /* Coloca la imagen debajo del texto */
         align-items: center; /* Centra el contenido */
