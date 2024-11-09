@@ -23,6 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(element);
     });
 });
+
 document.addEventListener("DOMContentLoaded", function() {
     const mobileNavToggle = document.querySelector(".mobile-nav-toggle");
     const sideMenu = document.querySelector(".side-menu");
@@ -54,55 +55,30 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 var swiper = new Swiper(".slide-content", {
-    slidesPerView: 1,
+    slidesPerView: 3,
     spaceBetween: 25,
-    slidesPerGroup: 1,
+    slidesPerGroup: 3,
     loop: true,
     loopFillGroupWithBlank: true,
     speed: 1000,
     pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-        dynamicBullets: true,
+      el: ".swiper-pagination",
+      clickable: true,
+      dynamicBullets: true,
     },
     navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
     },
     breakpoints: {
         0: {
-            slidesPerView: 1, // Mostrar solo una carta en pantallas pequeñas
-            slidesPerGroup: 1, // Agrupar de una en una
+            slidesPerView: 1,
         },
         520: {
             slidesPerView: 2,
-            slidesPerGroup: 2,
         },
         950: {
             slidesPerView: 3,
-            slidesPerGroup: 3,
         },
     },
-});
-document.addEventListener('DOMContentLoaded', (event) => {
-    const videos = document.querySelectorAll('.historias-container video');
-
-    // Añadir evento 'ended' a cada video para reproducir el siguiente
-    videos.forEach((video, index) => {
-        video.addEventListener('ended', () => {
-            const nextVideo = videos[(index + 1) % videos.length];
-            nextVideo.play();
-        });
-    });
-
-    // Pausar otros videos cuando uno se reproduce
-    videos.forEach(video => {
-        video.addEventListener('play', function() {
-            videos.forEach(v => {
-                if (v !== video) {
-                    v.pause();
-                }
-            });
-        });
-    });
 });
