@@ -44,6 +44,8 @@ body, html {
     height: 100%;
     width: 100%;
     font-family: "Poppins", sans-serif;
+    align-items: center;
+    justify-content: center;
 }
 
 header {
@@ -318,25 +320,34 @@ a.enlace.empresa:hover {
 }
 
 .nuestra-vision-objetivos .vision,
-.nuestra-vision-objetivos .objetivos {
+.nuestra-vision-objetivos .objetivos,
+.nuestra-vision-objetivos .valores {
     border-radius: 8px;
     padding: 20px;
     margin: 10px;
     width: 100%;
     max-width: 500px;
+    text-align: center;
 }
 
 .nuestra-vision-objetivos .vision h2,
-.nuestra-vision-objetivos .objetivos h2 {
+.nuestra-vision-objetivos .objetivos h2,
+.nuestra-vision-objetivos .valores h2{
     font-size: 20px;
     color: white;
     margin-bottom: 10px;
+    text-align: center;
 }
 
-.nuestra-vision-objetivos .vision p,
-.nuestra-vision-objetivos .objetivos p {
+.nuestra-vision-objetivos .vision li,
+.nuestra-vision-objetivos .objetivos li,
+.nuestra-vision-objetivos .valores li
+{
     font-size: 16px;
     line-height: 1.6;
+    text-align: center;
+    list-style: none;
+
 }
 
 /* Background video styles */
@@ -363,7 +374,6 @@ a.enlace.empresa:hover {
     background-color: #efefef;
 }
 .doctores{
-    min-width: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -488,7 +498,6 @@ a.enlace.empresa:hover {
 .swiper-pagination-bullet-active{
     background-color: #4070F4;
 }
-
 
 .Nuestra_Experiencia::before {
     content: '';
@@ -732,6 +741,7 @@ html, body {
     .side-menu {
         width: 200px;
     }
+ 
 }
 
 
@@ -742,6 +752,11 @@ html, body {
 
     .side-menu {
         display: none;
+
+        
+    .swiper-navBtn{
+        display: none;
+    }
     }
 }
 @media screen and (max-width: 768px) {
@@ -775,18 +790,12 @@ html, body {
         margin: 10px 0;
         align-items: center;
     }
+ 
 
     /* Ajuste para la sección de objetivos y visión */
     .nuestra-vision-objetivos .content-box {
         flex-direction: column;
     }
-    .slide-content{
-        margin: 0 10px;
-    }
-    .swiper-navBtn{
-        display: none;
-    }
-    
     .experiencia-content {
         flex-direction: column; /* Coloca la imagen debajo del texto */
         align-items: center; /* Centra el contenido */
@@ -809,7 +818,7 @@ html, body {
         max-width: 100%; /* Ajusta el tamaño de la imagen para que no desborde */
         height: auto;
     }
-}
+
     /* Centra los enlaces de redes sociales */
     .social-media {
         justify-content: center;
@@ -818,3 +827,4 @@ html, body {
     .footer p {
         text-align: center;
     }
+}

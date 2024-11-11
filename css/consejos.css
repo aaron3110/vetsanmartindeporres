@@ -285,11 +285,19 @@ a {
     text-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
 }
 
-.slider .list .item .content .title,
-.slider .list .item .content .type {
-    font-size: 5em;
+.slider .list .item .content .title{
+    font-size: 3em;
     font-weight: bold;
-    line-height: 1.3em;
+}
+
+.slider .list .item .content .type {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.slider .list .item .content .description {
+    font-size: 20em; /* Ajusta este valor según sea necesario */
+    line-height: 1.6; /* Ajusta la altura de línea para mejorar la legibilidad */
 }
 
 .slider .list .item .type {
@@ -335,8 +343,8 @@ a {
 }
 
 .thumbnail .item {
-    width: 150px;
-    height: 220px;
+    width: 100px;
+    height: 150px;
     flex-shrink: 0;
     position: relative;
 }
@@ -748,8 +756,24 @@ html, body {
     .side-menu {
         width: 200px;
     }
+
+    .thumbnail .item {
+        width: 100px;
+        height: 150px;
+        flex-shrink: 0;
+        position: relative;
+        display: none; /* Oculta todos los thumbnails por defecto */
+    }
+    
+    .thumbnail .item.active {
+        display: block; /* Muestra solo el thumbnail activo */
+    }
 }
 
+.slider .list .item .content .description {
+    font-size: 14px; /* Ajusta este valor según sea necesario */
+    line-height: 1.6; /* Ajusta la altura de línea para mejorar la legibilidad */
+}
 
 @media (min-width: 769px) {
     .mobile-nav {
