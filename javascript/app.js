@@ -6,19 +6,17 @@ let sliderList = slider.querySelector('.slider .list')
 let thumbnail = document.querySelector('.slider .thumbnail')
 let thumbnailItems = thumbnail.querySelectorAll('.item')
 
-thumbnail.appendChild(thumbnailItems[0])
+thumbnailItems[0].classList.add('active') // Muestra el primer thumbnail
 
 // Function for next button 
 nextBtn.onclick = function() {
     moveSlider('next')
 }
 
-
 // Function for prev button 
 prevBtn.onclick = function() {
     moveSlider('prev')
 }
-
 
 function moveSlider(direction) {
     let sliderItems = sliderList.querySelectorAll('.item')
@@ -34,6 +32,9 @@ function moveSlider(direction) {
         slider.classList.add('prev')
     }
 
+    // Actualiza la visibilidad de los thumbnails
+    thumbnailItems.forEach(item => item.classList.remove('active'))
+    thumbnailItems[0].classList.add('active')
 
     slider.addEventListener('animationend', function() {
         if(direction === 'next'){
