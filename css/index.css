@@ -479,13 +479,13 @@ a.enlace.empresa:hover {
 .Nuestra_Experiencia::before {
     content: '';
     position: absolute;
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     background-image: url('patitas_perro.png'); 
     background-size: contain;
     background-repeat: no-repeat;
     opacity: 0.2;
-    top: 100px;
+    top: 200px;
 }
 
 .Nuestra_Experiencia {
