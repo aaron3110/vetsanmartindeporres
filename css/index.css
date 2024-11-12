@@ -405,7 +405,6 @@ a.enlace.empresa:hover {
     row-gap: 5px;
     padding: 5px 0;
     background-color: #efefef; /* Color de fondo para la imagen */
-    border-radius: 25px; /* Ajusta los bordes redondeados si es necesario */
 }
 
 .image-content img {
@@ -792,7 +791,6 @@ html, body {
 
     .experiencia-text {
         margin: 0; /* Remueve márgenes adicionales */
-        padding: 10px 20px; /* Ajusta el padding si es necesario */
         text-align: center;
 
     }
