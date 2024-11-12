@@ -361,100 +361,77 @@ a.enlace.empresa:hover {
     z-index: -1;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.doctor{
+.doctor {
     padding: 80px 0;
     font-size: 28px;
     text-align: center;
     background-color: #efefef;
 }
-.doctores{
+
+.doctores {
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #efefef;
 }
-.slide-container{
+
+.slide-container {
     max-width: 1120px;
     width: 100%;
     padding: 40px 0;
 }
-.slide-content{
+
+.slide-content {
     margin: 0 40px;
     overflow: hidden;
     border-radius: 25px;
 }
-.card{
+
+.card {
     border-radius: 25px;
     background-color: #fff;
 }
+
 .image-content,
-.card-content{
+.card-content {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 10px 14px;
 }
-.image-content{
+
+.image-content {
     position: relative;
     row-gap: 5px;
-    padding: 25px 0;
-}
-.overlay{
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    background-color: #4070F4;
-    border-radius: 25px 25px 0 25px;
-}
-.overlay::before,
-.overlay::after{
-    content: '';
-    position: absolute;
-    right: 0;
-    bottom: -40px;
-    height: 40px;
-    width: 40px;
-    background-color: #4070F4;
-}
-.overlay::after{
-    border-radius: 0 25px 0 0;
-    background-color: #fff;
-}
-.card-image{
-    position: relative;
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
-    background: #fff;
-    padding: 3px;
+    padding: 5px 0;
+    background-color: #efefef; /* Color de fondo para la imagen */
+    border-radius: 25px; /* Ajusta los bordes redondeados si es necesario */
 }
 
-.card-image .card-img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 4px solid #4070F4;
+.image-content img {
+    width: 50%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 25px; /* Ajusta los bordes redondeados si es necesario */
+
 }
-.name{
+
+.card-image {
+    display: none; /* Oculta el círculo */
+}
+
+.name {
     font-size: 18px;
     font-weight: 500;
     color: #333;
 }
-.description{
+
+.description {
     font-size: 14px;
     color: #707070;
     text-align: center;
 }
-.button{
+
+.button {
     border: none;
     font-size: 16px;
     color: #fff;
@@ -465,40 +442,41 @@ a.enlace.empresa:hover {
     cursor: pointer;
     transition: all 0.3s ease;
 }
-.button:hover{
+
+.button:hover {
     background: #265DF2;
 }
 
-.swiper-navBtn{
+.swiper-navBtn {
     color: #6e93f7;
     transition: color 0.3s ease;
 }
 
-.swiper-navBtn:hover{
+.swiper-navBtn:hover {
     color: #4070F4;
 }
 
 .swiper-navBtn::before,
-.swiper-navBtn::after{
-    font-size: 40px
+.swiper-navBtn::after {
+    font-size: 40px;
 }
 
-.swiper-button-next{
+.swiper-button-next {
     right: 0;
 }
 
-.swiper-button-prev{
+.swiper-button-prev {
     left: 0;
 }
 
-.swiper-pagination-bullet{
+.swiper-pagination-bullet {
     background-color: #6e93f7;
     opacity: 1;
 }
-.swiper-pagination-bullet-active{
+
+.swiper-pagination-bullet-active {
     background-color: #4070F4;
 }
-
 .Nuestra_Experiencia::before {
     content: '';
     position: absolute;
@@ -742,6 +720,9 @@ html, body {
         width: 200px;
     }
  
+    .swiper-navBtn{
+        display: none;
+    }   
 }
 
 
@@ -790,8 +771,15 @@ html, body {
         margin: 10px 0;
         align-items: center;
     }
- 
-
+    .swiper-button-next{
+        display: none;
+    }
+    .swiper-navBtn{
+        display: none;
+    }
+    .swiper-pagination{
+    display: none;
+    }
     /* Ajuste para la sección de objetivos y visión */
     .nuestra-vision-objetivos .content-box {
         flex-direction: column;

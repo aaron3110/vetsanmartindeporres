@@ -175,11 +175,10 @@ a.enlace.empresa:hover {
     right: 10px; 
     top: 22px; 
 }
-
-.banner {
+.servicio-1 {
     position: relative;
-    min-height: 110vh;
-    background-image: url('rx.jpg');
+    min-height: 110vh; 
+    background-image: url(rx.jpg);
     background-size: cover; 
     background-repeat: no-repeat; 
     background-position: center; 
@@ -191,8 +190,62 @@ a.enlace.empresa:hover {
     background-attachment: fixed; 
     margin-top: -100px;
     z-index: 1; 
+    
+}
+.servicio-5 {
+    position: relative;
+    min-height: 110vh; 
+    background-image: url(Inst_Laboratorio.jpg);
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    height: 100px; 
+    display: flex; 
+    align-items: center; 
+    padding: 0 20px; 
+    color:  #efefef; 
+    background-attachment: fixed; 
+    margin-top: -100px;
+    z-index: 1; 
+    
 }
 
+.servicio-6 {
+    position: relative;
+    min-height: 110vh; 
+    background-image: url(Inst_Quirofano.jpg);
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    height: 100px; 
+    display: flex; 
+    align-items: center; 
+    padding: 0 20px; 
+    color:  #efefef; 
+    background-attachment: fixed; 
+    margin-top: -100px;
+    z-index: 1; 
+    
+}
+
+
+.servicio-8 {
+    position: relative;
+    min-height: 110vh; 
+    background-image: url(Exoticos.jpg);
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    height: 100px; 
+    display: flex; 
+    align-items: center; 
+    padding: 0 20px; 
+    color:  #efefef; 
+    background-attachment: fixed; 
+    margin-top: -100px;
+    z-index: 1; 
+    
+}
 .logo {
     position: absolute;
     top: 0,5px; 
@@ -209,8 +262,15 @@ a.enlace.empresa:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-
-.banner .content-banner {
+.servicio-1 .content-servicio-1,
+.servicio-2 .content-servicio-2,
+.servicio-3 .content-servicio-3,
+.servicio-4 .content-servicio-4,
+.servicio-5 .content-servicio-5,
+.servicio-6 .content-servicio-6,
+.servicio-7 .content-servicio-7,
+.servicio-8 .content-servicio-8, 
+.servicio-9 .content-servicio-9 {
     position: relative; 
     z-index: 2; 
     text-align: center; 
@@ -219,14 +279,30 @@ a.enlace.empresa:hover {
     
 }
 
-.banner .content-banner p {
+.servicio-1 .content-servicio-1 p,
+.servicio-2 .content-servicio-2 p,
+.servicio-3 .content-servicio-3 p,
+.servicio-4 .content-servicio-4 p,
+.servicio-5 .content-servicio-5 p,
+.servicio-6 .content-servicio-6 p,
+.servicio-7 .content-servicio-7 p,
+.servicio-8 .content-servicio-8 p, 
+.servicio-9 .content-servicio-9 p {
     text-align: center;
     font-size: 35px;
     margin: 0 auto;
     font-weight: bold;
 }
 
-.banner .content-banner h2 {
+.servicio-1 .content-servicio-1 h2,
+.servicio-2 .content-servicio-2 h2,
+.servicio-3 .content-servicio-3 h2,
+.servicio-4 .content-servicio-4 h2,
+.servicio-5 .content-servicio-5 h2,
+.servicio-6 .content-servicio-6 h2,
+.servicio-7 .content-servicio-7 h2,
+.servicio-8 .content-servicio-8 h2, 
+.servicio-9 .content-servicio-9 h2 {
     text-align: center;
     font-size: 25px;
     margin: 10px auto 0;
@@ -277,6 +353,22 @@ nav ul li a.active {
     line-height: 1.6;
     color: #555;
     text-align: left; /* Alinea el texto a la izquierda */
+}
+
+.video-servicio {
+    max-width: 15%;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.texto-servicio {
+    max-width: 600px;
+    margin: 20px;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
 }
 .footer {
     position: relative;
@@ -493,6 +585,13 @@ html, body {
         line-height: 1.6;
         color: #555;
         text-align: center; /* Centra el texto dentro del contenedor */
+    }
+    .video-servicio {
+        max-width: 45%;
+        height: auto;
+        border-radius: 10px;
+        margin: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
 }
 @media (max-width: 768px) {
