@@ -609,9 +609,18 @@ html, body {
     .navbar ul li {
         margin: 5px 0;
     }
-    .content-banner{
+    .content-servicio-1,
+    .content-servicio-2,
+    .content-servicio-3,
+    .content-servicio-4,
+    .content-servicio-5,
+    .content-servicio-6,
+    .content-servicio-7,
+    .content-servicio-8,
+    .content-servicio-9 {
         padding-right: 30px;
     }
+
 
     .Servicios-port {
         flex-direction: column;
