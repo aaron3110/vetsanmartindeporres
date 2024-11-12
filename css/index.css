@@ -485,12 +485,11 @@ a.enlace.empresa:hover {
     background-size: contain;
     background-repeat: no-repeat;
     opacity: 0.2;
+    top: 100px;
 }
 
 .Nuestra_Experiencia {
-    padding: 100px 20px;
     background-color: #efefef;
-    margin: 20px 0;
     text-align: left;
     position: relative;
     overflow: hidden;
