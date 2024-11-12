@@ -785,7 +785,10 @@ html, body {
         align-items: center; /* Centra el contenido */
         text-align: center; /* Centra el texto */
     }
-
+    .Nuestra_Experiencia::before {
+        width: 200px;
+        height: 150px;
+    }
     .experiencia-text {
         text-align: center;
 
