@@ -276,7 +276,7 @@ nav ul li a.active {
 
 .texto-quienes-somos p {
     font-size: 19px; 
-    line-height: 1.6; 
+    color: #555;
 }
 
 .highlight {
@@ -495,7 +495,7 @@ nav ul li a.active {
 
 .Nuestra_Experiencia h2 {
     font-size: 36px;
-    color: #333;
+    color: black;
     margin-bottom: 20px;
     margin-top: 100px; /* Ajusta este valor para mover el texto más abajo */
     position: relative;

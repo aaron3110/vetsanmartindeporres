@@ -244,7 +244,7 @@ nav ul li a.active {
 
 .map-section h2 {
     font-size: 36px;
-    color: #333;
+    color: black;
     margin-bottom: 20px;
 }
 
@@ -303,7 +303,7 @@ nav ul li a.active {
     font-size: 40px;
     padding-right: 175px ;
     font-weight: bold;
-    color: #333;
+    color: black;
 }
 
 .contact-left-title hr{
