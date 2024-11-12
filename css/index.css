@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap);
+
 @keyframes slideUp {
     from { transform: translateY(20px); opacity: 0; }
     to { transform: translateY(0); opacity: 1; }
@@ -28,15 +29,11 @@
 }
 
 
-.slide-up {
-    opacity: 0;
-    animation: slideUp 1s forwards;
-}
-
 .slide-down {
     opacity: 0;
     animation: slideDown 1s forwards;
 }
+
 
 body, html {
     margin: 0;
@@ -44,8 +41,6 @@ body, html {
     height: 100%;
     width: 100%;
     font-family: "Poppins", sans-serif;
-    align-items: center;
-    justify-content: center;
 }
 
 header {
@@ -88,7 +83,7 @@ header {
 
 .navbar ul li a:hover {
     color: #4070F4;
-    transform: scale(1.2); 
+    transform: scale(1.2); /* Increase size on hover */
 }
 
 a.enlace {
@@ -99,6 +94,9 @@ a.enlace {
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
+a.enlace:hover {
+    transform: scale(1.2); /* Increase size on hover */
+}
 
 a.enlace.empresa {
     color: white; 
@@ -114,6 +112,7 @@ a.enlace.empresa {
 a.enlace.empresa:hover {
     color: white; 
 }
+
 .side-menu {
     position: fixed;
     top: 0;
@@ -235,9 +234,8 @@ a.enlace.empresa:hover {
 }
 
 
-.navbar .menu .enlace.active {
+nav ul li a.active {
     color: #007bff;
-    border-bottom: 2px solid #007bff;
 }
 
 .quienes-somos {
@@ -479,13 +477,13 @@ a.enlace.empresa:hover {
 .Nuestra_Experiencia::before {
     content: '';
     position: absolute;
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     background-image: url('patitas_perro.png'); 
     background-size: contain;
     background-repeat: no-repeat;
     opacity: 0.2;
-    top: 200px;
+    top: 100px;
 }
 
 .Nuestra_Experiencia {

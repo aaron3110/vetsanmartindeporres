@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap);
+
 @keyframes slideUp {
     from { transform: translateY(20px); opacity: 0; }
     to { transform: translateY(0); opacity: 1; }
@@ -28,15 +29,11 @@
 }
 
 
-.slide-up {
-    opacity: 0;
-    animation: slideUp 1s forwards;
-}
-
 .slide-down {
     opacity: 0;
     animation: slideDown 1s forwards;
 }
+
 
 body, html {
     margin: 0;
@@ -86,7 +83,7 @@ header {
 
 .navbar ul li a:hover {
     color: #4070F4;
-    transform: scale(1.2); 
+    transform: scale(1.2); /* Increase size on hover */
 }
 
 a.enlace {
@@ -97,6 +94,9 @@ a.enlace {
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
+a.enlace:hover {
+    transform: scale(1.2); /* Increase size on hover */
+}
 
 a.enlace.empresa {
     color: white; 
@@ -112,6 +112,7 @@ a.enlace.empresa {
 a.enlace.empresa:hover {
     color: white; 
 }
+
 .side-menu {
     position: fixed;
     top: 0;
@@ -233,11 +234,9 @@ a.enlace.empresa:hover {
 }
 
 
-.navbar .menu .enlace.active {
+nav ul li a.active {
     color: #007bff;
-    border-bottom: 2px solid #007bff;
 }
-
 .map-section {
     padding: 40px 20px;
     text-align: center;
