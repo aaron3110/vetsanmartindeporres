@@ -478,7 +478,7 @@ nav ul li a.active {
     content: '';
     position: absolute;
     width: 200px;
-    height: 200px;
+    height: 150px;
     background-image: url('patitas_perro.png'); 
     background-size: contain;
     background-repeat: no-repeat;
