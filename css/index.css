@@ -179,7 +179,6 @@ a.enlace.empresa:hover {
 .menu-icon {
     width: 30px; /* Ajusta el tamaño según sea necesario */
     height: auto;
-    margin-right: 5px; /* Espacio entre la imagen y el texto */
     vertical-align: middle;
 }
 .banner {
