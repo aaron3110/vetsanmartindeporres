@@ -89,11 +89,20 @@ var swiper = new Swiper(".slide-content", {
     },
   });
 
-document.addEventListener('DOMContentLoaded', function() {
+  document.addEventListener('DOMContentLoaded', function() {
     var video1 = document.getElementById('video1');
     var video2 = document.getElementById('video2');
+    var video3 = document.getElementById('video3');
 
     video1.addEventListener('ended', function() {
         video2.play();
+    });
+
+    video2.addEventListener('ended', function() {
+        video3.play();
+    });
+
+    video3.addEventListener('ended', function() {
+        video1.play();
     });
 });
