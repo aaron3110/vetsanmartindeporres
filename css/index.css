@@ -201,7 +201,7 @@ a.enlace.empresa:hover {
 .banner {
     position: relative;
     min-height: 110vh;
-    background-image: url('Imagen\ principal.png');
+    background-image: url('../img/imagen\ principal.png');
     background-size: cover; 
     background-repeat: no-repeat; 
     background-position: center; 
