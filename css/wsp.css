@@ -1,7 +1,7 @@
 .btn-wsp {
     position: fixed;
     bottom: 20px;
-    right: 20px;
+    right: 35px;
     background-color: #25d366;
     color: white;
     border-radius: 50%;
@@ -13,11 +13,30 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s, box-shadow 0.3s;
     z-index: 1000;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
 }
 
 .btn-wsp:hover {
-    transform: scale(1.1);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    animation: floatHover 2s ease-in-out infinite;
+    box-shadow: 0 8px 16px rgba(37, 211, 102, 0.5);
+}
+
+@keyframes floatHover {
+    0%, 100% {
+        transform: translateY(0px) scale(1.1);
+    }
+    50% {
+        transform: translateY(-20px) scale(1.1);
+    }
 }
 
 .btn-wsp svg {
