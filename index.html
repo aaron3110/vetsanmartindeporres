@@ -6,6 +6,8 @@
     <title>Veterinaria San Martin de Porres</title>
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/wsp.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/mobile-logo-hide.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="icon" type="image/ico" href="img/ico.ico"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
@@ -39,8 +41,20 @@
         </header>
             <section class="banner fade-in">
                 <div class="content-banner slide-up">
-                    <p>BIENVENIDO A LA VETERINARIA SAN MARTIN DE PORRES</p>
-                    <h2>SU MEJOR OPCIÓN <br />PARA EL BIENIESTAR, SALUD Y VIDA DE SU MASCOTA</h2>
+                    <p class="banner-welcome">BIENVENIDO A LA VETERINARIA</p>
+                    <h1 class="banner-title">SAN MARTIN DE PORRES</h1>
+                    <h2 class="banner-subtitle">SU MEJOR OPCIÓN <br />PARA EL BIENESTAR, SALUD <br />Y VIDA DE SU MASCOTA</h2>
+                    <p class="banner-description">Más de 10 años cuidando con amor y profesionalismo a tus compañeros de vida. Ofrecemos servicios veterinarios integrales con un equipo altamente capacitado.</p>
+                    <div class="banner-cta">
+                        <a href="servicios.html" class="btn-primary">
+                            <i class="fas fa-stethoscope"></i>
+                            Nuestros Servicios
+                        </a>
+                        <a href="contacto.html" class="btn-secondary">
+                            <i class="fas fa-phone"></i>
+                            Contáctanos
+                        </a>
+                    </div>
                 </div>
             </section>
         </div>
@@ -53,12 +67,69 @@
             </ul>
         </nav>
     <section class="quienes-somos fade-in">
-        <div class="container-quienes-somos slide-up">
-            <img src="img/quienés_somos.jpg" alt="Imagen de veterinaria" class="imagen-quienes-somos fade-in">
-            <div class="texto-quienes-somos slide-up">
+        <div class="quienes-somos-container">
+            <div class="quienes-somos-header">
                 <h2>¿QUIÉNES <span class="highlight">SOMOS?</span></h2>
-                <h2>Somos la veterinaria <span class="highlight">San Martin de Porres</span></h2>
-                <p>Somos un equipo apasionado y comprometido con el bienestar de cada mascota que entra por nuestras puertas. Desde nuestra fundación, nos hemos dedicado a ofrecer un cuidado integral y personalizado, porque entendemos que cada mascota es un miembro importante de su familia. Nuestro objetivo es brindar un entorno de confianza, donde usted y su mascota se sientan seguros y atendidos en cada visita.</p>
+                <p class="quienes-somos-subtitle">Tu familia veterinaria de confianza desde hace más de una década</p>
+            </div>
+            
+            <div class="quienes-somos-content">
+                <div class="quienes-somos-visual">
+                    <div class="imagen-quienes-somos">
+                        <img src="img/quienés_somos.jpg" alt="Veterinaria San Martin de Porres" loading="lazy">
+                    </div>
+                </div>
+                
+                <div class="quienes-somos-text">
+                    <div class="quienes-somos-description">
+                        <h3>Somos la veterinaria <span class="highlight">San Martin de Porres</span></h3>
+                        <p>Somos un equipo apasionado y comprometido con el bienestar de cada mascota que entra por nuestras puertas. Desde nuestra fundación, nos hemos dedicado a ofrecer un cuidado integral y personalizado, porque entendemos que cada mascota es un miembro importante de su familia.</p>
+                        
+                        <p>Nuestro objetivo es brindar un entorno de confianza, donde usted y su mascota se sientan seguros y atendidos en cada visita. Creemos que la medicina veterinaria va más allá del tratamiento; se trata de crear vínculos duraderos y brindar esperanza a las familias.</p>
+                    </div>
+                    
+                    <div class="quienes-somos-features">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Pasión por los animales</h4>
+                                <p>Cada mascota recibe el mismo amor y cuidado que le daríamos a la nuestra</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Formación continua</h4>
+                                <p>Nos mantenemos actualizados con los avances veterinarios</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Enfoque familiar</h4>
+                                <p>Entendemos que las mascotas son parte de la familia y las tratamos como tal</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Compromiso con la excelencia</h4>
+                                <p>Mantenemos los más altos estándares de calidad en cada procedimiento</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -94,167 +165,277 @@
             </div>
         </div>
     </div>
-    <div class="doctor">
-        <h2>CONOCE A NUESTROS DOCTORES</h2>
-    </div>
-    <div class="doctores">
-    <div class="slide-container swiper">
-        <div class="slide-content">
-            <div class="card-wrapper swiper-wrapper">
-                <div class="card swiper-slide">
-                    <div class="image-content">
-                        <div class="image-content">
-                            <img src="img/medico.avif" alt="Doctor 1" class="card-img">
+    <section class="doctores-section">
+        <div class="doctores-container">
+            <div class="doctores-header">
+                <h2>CONOCE A LOS DOCTORES</h2>
+                <p class="doctores-subtitle">Nuestro equipo de profesionales altamente capacitados</p>
+            </div>
+            <div class="doctores">
+                <div class="slide-container swiper">
+                    <div class="slide-content">
+                        <div class="card-wrapper swiper-wrapper">
+                            <div class="card swiper-slide">
+                                <div class="image-content">
+                                    <img src="img/medico.avif" alt="Doctor 1" class="card-img" loading="lazy">
+                                </div>
+                                <div class="card-content">
+                                    <h2 class="name">Dr. Randall Azofeifa</h2>
+                                    <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consecteur adipisicing elit.</p>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide">
+                                <div class="image-content">
+                                    <img src="img/medico.avif" alt="Doctor 2" class="card-img" loading="lazy">
+                                </div>
+                                <div class="card-content">
+                                    <h2 class="name">Dr. Luis Coto</h2>
+                                    <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consecteur adipisicing elit.</p>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide">
+                                <div class="image-content">
+                                    <img src="img/medico.avif" alt="Doctor 3" class="card-img" loading="lazy">
+                                </div>
+                                <div class="card-content">
+                                    <h2 class="name">Dra. Natalia Alvarado</h2>
+                                    <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consecteur adipisicing elit.</p>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide">
+                                <div class="image-content">
+                                    <img src="img/medico.avif" alt="Doctor 4" class="card-img" loading="lazy">
+                                </div>
+                                <div class="card-content">
+                                    <h2 class="name">Dra. Kharen Moreno</h2>
+                                    <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consecteur adipisicing elit.</p>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide">
+                                <div class="image-content">
+                                    <img src="img/medico.avif" alt="Doctor 5" class="card-img" loading="lazy">
+                                </div>
+                                <div class="card-content">
+                                    <h2 class="name">Dra. Francinny Núñez</h2>
+                                    <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consecteur adipisicing elit.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="card-content">
-                        <h2 class="name">Dr. Randall Azofeifa</h2>
-                        <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consecteur adipisicing elit.</p>
-
-                    </div>
-                    <br>
-                </div><div class="card swiper-slide">
-                    <div class="image-content">
-                    <span class="overlay"></span>
-
-                    <div class="image-content">
-                        <img src="img/medico.avif" alt="Doctor 1" class="card-img">
+                    <div class="swiper-button-next swiper-navBtn"></div>
+                    <div class="swiper-button-prev swiper-navBtn"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="testimonios-section">
+        <div class="testimonios-container">
+            <div class="testimonios-header">
+                <h2>LO QUE DICEN NUESTROS CLIENTES</h2>
+                <p class="testimonios-subtitle">La satisfacción de nuestros clientes es nuestra mayor recompensa</p>
+            </div>
+            
+            <div class="testimonios-slider">
+                <div class="testimonio-card active">
+                    <div class="testimonio-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="testimonio-text">"Excelente atención y profesionalismo. El Dr. Randall y todo el equipo han cuidado de mi perro Max con mucho amor y dedicación. Los recomiendo totalmente."</p>
+                        <div class="testimonio-author">
+                            <div class="author-avatar">
+                                <img src="img/perro.jpg" alt="Cliente" loading="lazy">
+                            </div>
+                            <div class="author-info">
+                                <h4>María González</h4>
+                                <span>Dueña de Max (Golden Retriever)</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                    <div class="card-content">
-                        <h2 class="name">Dr. Luis Coto</h2>
-                        <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consecteur adipisicing elit.</p>
-
+                
+                <div class="testimonio-card">
+                    <div class="testimonio-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="testimonio-text">"Servicio excepcional. Mi gata Luna recibió el mejor cuidado durante su cirugía. El equipo es muy profesional y cariñoso con los animales."</p>
+                        <div class="testimonio-author">
+                            <div class="author-avatar">
+                                <img src="img/perro.jpg" alt="Cliente" loading="lazy">
+                            </div>
+                            <div class="author-info">
+                                <h4>Carlos Rodríguez</h4>
+                                <span>Dueño de Luna (Gato Persa)</span>
+                            </div>
+                        </div>
                     </div>
-                    <br>
-                </div><div class="card swiper-slide">
-                    <div class="image-content">
-                    <span class="overlay"></span>
-                    <div class="image-content">
-                        <img src="img/medico.avif" alt="Doctor 1" class="card-img">
+                </div>
+                
+                <div class="testimonio-card">
+                    <div class="testimonio-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="testimonio-text">"Llevo años confiando en esta veterinaria. Siempre están disponibles cuando los necesito y el trato es muy personalizado. ¡Los mejores!"</p>
+                        <div class="testimonio-author">
+                            <div class="author-avatar">
+                                <img src="img/perro.jpg" alt="Cliente" loading="lazy">
+                            </div>
+                            <div class="author-info">
+                                <h4>Ana Martínez</h4>
+                                <span>Dueña de Rocky (Bulldog)</span>
+                            </div>
+                        </div>
                     </div>
-                    </div>
-                    <div class="card-content">
-                        <h2 class="name">Dra. Karina Madrigal</h2>
-                        <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consecteur adipisicing elit.</p>
-
-                    </div>
-                    <br>
-                </div><div class="card swiper-slide">
-                    <div class="image-content">
-                    <span class="overlay"></span>
-
-                    <div class="image-content">
-                        <img src="img/medico.avif" alt="Doctor 1" class="card-img">
-                    </div>
-                    </div>
-                    <div class="card-content">
-                        <h2 class="name">Dra. Natalia Alvarado</h2>
-                        <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consecteur adipisicing elit.</p>
-
-                    </div>
-                    <br>
-                </div><div class="card swiper-slide">
-                    <div class="image-content">
-                    <span class="overlay"></span>
-
-                    <div class="image-content">
-                        <img src="img/medico.avif" alt="Doctor 1" class="card-img">
-                    </div>
-                    </div>
-                    <div class="card-content">
-                        <h2 class="name">Dra. Alejandra León</h2>
-                        <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consecteur adipisicing elit.</p>
-
-                    </div>
-                    <br>
-                </div><div class="card swiper-slide">
-                    <div class="image-content">
-                    <span class="overlay"></span>
-                    <div class="image-content">
-                        <img src="img/medico.avif" alt="Doctor 1" class="card-img">
-                    </div>
-                    </div>
-                    <div class="card-content">
-                        <h2 class="name">Dra. Kharen Moreno</h2>
-                        <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consecteur adipisicing elit.</p>
-
-                    </div>
-                    <br>
-                </div><div class="card swiper-slide">
-                    <div class="image-content">
-                    <span class="overlay"></span>
-
-                    <div class="image-content">
-                        <img src="img/medico.avif" alt="Doctor 1" class="card-img">
+                </div>
+            </div>
+            
+            <div class="testimonios-navigation">
+                <button class="testimonio-prev">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="testimonio-dots">
+                    <span class="dot active" data-slide="0"></span>
+                    <span class="dot" data-slide="1"></span>
+                    <span class="dot" data-slide="2"></span>
+                </div>
+                <button class="testimonio-next">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+    
+    <div class="Nuestra_Experiencia">
+        <div class="experiencia-container">
+            <div class="experiencia-header">
+                <h2>NUESTRA EXPERIENCIA</h2>
+                <p class="experiencia-subtitle">Más de una década cuidando la salud y bienestar de tus mascotas</p>
+            </div>
+            
+            <div class="experiencia-content">
+                <div class="experiencia-text">
+                    <div class="experiencia-description">
+                        <p>Desde nuestros inicios en las instalaciones de San Juan de Dios de Desamparados, hemos evolucionado constantemente para brindar el mejor cuidado veterinario. Nuestra trayectoria nos ha permitido desarrollar una experiencia integral que combina conocimientos técnicos avanzados con un trato humano y personalizado.</p>
+                        
+                        <p>Hemos crecido no solo en infraestructura y tecnología, sino también en la comprensión profunda de las necesidades únicas de cada mascota y su familia. Cada caso que atendemos nos enseña algo nuevo y nos fortalece en nuestro compromiso con la excelencia veterinaria.</p>
                     </div>
                     
+                    <div class="experiencia-stats">
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="+20 Mil">0</div>
+                            <div class="stat-label">Mascotas Atendidas</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="10">0</div>
+                            <div class="stat-label">Años de Experiencia</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="98%">0</div>
+                            <div class="stat-label">Satisfacción</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="+15">0</div>
+                            <div class="stat-label">Servicios Ofrecidos</div>
+                        </div>
                     </div>
-                    <div class="card-content">
-                        <h2 class="name">Dra. Francinny Núñez </h2>
-                        <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consecteur adipisicing elit.</p>
-                    </div>
-                    <br>
                 </div>
-            </div>
-        </div>
-        <div class="swiper-button-next swiper-navBtn"></div>
-        <div class="swiper-button-prev swiper-navBtn"></div>
-        <div class="swiper-pagination"></div>
-        </div>
-    </div>
-    <div class="Nuestra_Experiencia">
-        <div class="experiencia-content">
-            <div class="experiencia-text">
-                <h2>NUESTRA EXPERIENCIA</h2>
-                <p>Desde que nos encontrabamos en la instalaciones de San Juan de Dios de Desamparados, hemos crecido tanto en infraestructura, como en experiencia a lo largo de estos años. Los cuales nos han llevado a obtener un amplio conocimiento sobre el trato a nuestros pacientes y sus dueños. </p>
-            </div>
-            <div class="experiencia-image">
-                <img src="img/perro.png" alt="Nuestra Experiencia">
+                
+                <div class="experiencia-visual">
+                    <div class="experiencia-image">
+                        <img src="img/perro.png" alt="Nuestra Experiencia" loading="lazy">
+                    </div>
+                    
+                    <div class="experiencia-features">
+                        <div class="feature-item">
+                            <i class="fas fa-stethoscope"></i>
+                            <div class="feature-text">
+                                <h4>Equipo para diagnósticos</h4>
+                                <p>Contamos con equipos para el diagnóstico de tus mascotas</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-user-md"></i>
+                            <div class="feature-text">
+                                <h4>Equipo Especializado</h4>
+                                <p>Profesionales altamente capacitados y certificados</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </body>
-    <footer class="footer">
-        <div class="waves">
-            <div class="wave" id="wave1"></div>
-            <div class="wave" id="wave2"></div>
-            <div class="wave" id="wave3"></div>
-            <div class="wave" id="wave4"></div>
-        </div>
-    
+<footer class="footer">
+    <div class="footer-container">
         <div class="footer-content">
-            <div class="company-photo">
-                <img src="img/empresa.jpg" alt="Foto de la empresa">
-            </div>
-            <div class="footer-column">
-                <h3>Enlaces Rápidos</h3>
-                <ul class="menu">
-                    <li class="menu__item"><a class="menu__link" href="index.html">Inicio</a></li>
-                    <li class="menu__item"><a class="menu__link" href="servicios.html">Servicios</a></li>
-                    <li class="menu__item"><a class="menu__link" href="consejos.html">Consejos para tu mascota</a></li>
-                    <li class="menu__item"><a class="menu__link" href="contacto.html">Contáctanos</a></li>
-                </ul>
-            </div>
-            <div class="footer-column">
-                <h3>Síguenos</h3>
-                <div class="social-media">
-                    <a href="https://www.facebook.com/VeteSanMartindePorres/" class="social-icon__link" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
-                    <a href="https://www.instagram.com/vetesanmartindeporres_cr/" class="social-icon__link" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
-                    <a href="https://www.tiktok.com/@vetsanmartindeporres" class="social-icon__link" target="_blank"><ion-icon name="logo-tiktok"></ion-icon></a>
+            <div class="footer-brand">
+                <div class="brand-info">
+                    <img src="img/empresa.jpg" alt="Veterinaria San Martin" class="footer-logo" loading="lazy">
+                    <div class="brand-text">
+                        <h3>Veterinaria San Martin de Porres</h3>
+                        <p>Cuidando la salud y bienestar de tus mascotas con amor y profesionalismo.</p>
+                    </div>
                 </div>
             </div>
-    
-            <div class="footer-column">
-                <h3>Contáctanos</h3>
-                <p>Dirección: 150 metros este del Mall, Zona Centro, San José, Desamparados, San Rafael Abajo</p>
-                <p>Teléfono: 4000 1365</p>
-                <p>Email: info@vetsanmartin.com</p>
+            
+            <div class="footer-section">
+                <h4>Enlaces</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="consejos.html">Consejos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Contacto</h4>
+                <div class="contact-info">
+                    <p><i class="fas fa-map-marker-alt"></i> 150 metros este del Mall, Zona Centro</p>
+                    <p><i class="fas fa-phone"></i> 4000 1365</p>
+                    <p><i class="fas fa-envelope"></i> info@vetsanmartin.com</p>
+                    <p><i class="fas fa-clock"></i> Horarios de Atención</p>
+                    <div class="schedule-details">
+                        <p>Lunes-Sábado: 8:00 a.m a 8:00 p.m</p>
+                        <p>Domingo: 10:00 a.m a 8:00 p.m</p>
+                        <p>Emergencias a partir de 8:00 p.m a 12:00 a.m</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Síguenos</h4>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/VeteSanMartindePorres/" target="_blank" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/vetesanmartindeporres_cr/" target="_blank" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@vetsanmartindeporres" target="_blank" aria-label="TikTok">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                    <a href="https://api.whatsapp.com/send?phone=50686123030" target="_blank" aria-label="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
             </div>
         </div>
-    
-        <p style="opacity: 0.75;">&copy; 2024 Veterinaria San Martin de Porres | Todos los derechos reservados.</p>
-    </footer>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 Veterinaria San Martin de Porres. Todos los derechos reservados.</p>
+            <div class="footer-legal">
+                <a href="#">Política de Privacidad</a>
+                <a href="#">Términos de Uso</a>
+            </div>
+        </div>
+    </div>
+</footer>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="javascript/swiper-bundle.min.js"></script>

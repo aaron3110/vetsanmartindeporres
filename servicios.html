@@ -6,6 +6,8 @@
     <title>Veterinaria San Martin de Porres</title>
     <link rel="stylesheet" href="css/servicios.css">
     <link rel="stylesheet" href="css/wsp.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/mobile-logo-hide.css">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="icon" type="image/ico" href="img/ico.ico"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
@@ -54,98 +56,206 @@
         </nav>
         <section class="Servicios">
             <div class="contenedor">
-                <h2 class="titulo">NUESTROS SERVICIOS</h2>
+                <div class="services-header">
+                    <h2 class="titulo">NUESTROS SERVICIOS</h2>
+                    <p class="services-subtitle">Ofrecemos una amplia gama de servicios veterinarios para el cuidado integral de tu mascota</p>
+                </div>
                 <div class="Servicios-port">
-                    <a href="rayos-x.html" class="imagen-port">
-                        <p class="service-name">RAYOS X</p>
-                        <img src="img/Rayos X.png" alt="Rayos X">
-                        <div class="hover-galery"></div>
+                    <a href="rayos-x.html" class="service-card">
+                        <div class="service-image-wrapper">
+                            <img src="img/Rayos X.png" alt="Rayos X">
+                            <div class="service-overlay"></div>
+                        </div>
+                        <div class="service-content">
+                            <div class="service-icon">
+                                <i class="fas fa-x-ray"></i>
+                            </div>
+                            <h3 class="service-name">RAYOS X</h3>
+                            <p class="service-description">Diagnóstico por imágenes de alta calidad</p>
+                            <span class="service-link">Ver más <i class="fas fa-arrow-right"></i></span>
+                        </div>
                     </a>
-                    <a href="ultrasonidos.html" class="imagen-port">
-                        <p class="service-name">ULTRASONIDOS</p>
-                        <img src="img/Ultrasonidos.png" alt="Ultrasonidos">
-                        <div class="hover-galery"></div>
+                    <a href="ultrasonidos.html" class="service-card">
+                        <div class="service-image-wrapper">
+                            <img src="img/Ultrasonidos.png" alt="Ultrasonidos">
+                            <div class="service-overlay"></div>
+                        </div>
+                        <div class="service-content">
+                            <div class="service-icon">
+                                <i class="fas fa-wave-square"></i>
+                            </div>
+                            <h3 class="service-name">ULTRASONIDOS</h3>
+                            <p class="service-description">Tecnología avanzada para diagnóstico preciso</p>
+                            <span class="service-link">Ver más <i class="fas fa-arrow-right"></i></span>
+                        </div>
                     </a>
-                    <a href="internamiento.html" class="imagen-port">
-                        <p class="service-name">INTERNAMIENTO</p>
-                        <img src="img/Internamiento.png" alt="Internamento">
-                        <div class="hover-galery"></div>
+                    <a href="internamiento.html" class="service-card">
+                        <div class="service-image-wrapper">
+                            <img src="img/Internamiento.png" alt="Internamento">
+                            <div class="service-overlay"></div>
+                        </div>
+                        <div class="service-content">
+                            <div class="service-icon">
+                                <i class="fas fa-bed"></i>
+                            </div>
+                            <h3 class="service-name">INTERNAMIENTO</h3>
+                            <p class="service-description">Cuidado 24/7 para tu mascota</p>
+                            <span class="service-link">Ver más <i class="fas fa-arrow-right"></i></span>
+                        </div>
                     </a>
-                    <a href="farmacia.html" class="imagen-port">
-                        <p class="service-name">FARMACIA</p>
-                        <img src="img/farmacia.png" alt="Farmacia">
-                        <div class="hover-galery"></div>
+                    <a href="farmacia.html" class="service-card">
+                        <div class="service-image-wrapper">
+                            <img src="img/farmacia.png" alt="Farmacia">
+                            <div class="service-overlay"></div>
+                        </div>
+                        <div class="service-content">
+                            <div class="service-icon">
+                                <i class="fas fa-pills"></i>
+                            </div>
+                            <h3 class="service-name">FARMACIA</h3>
+                            <p class="service-description">Medicamentos y productos especializados</p>
+                            <span class="service-link">Ver más <i class="fas fa-arrow-right"></i></span>
+                        </div>
                     </a>
-                    <a href="laboratorio.html" class="imagen-port">
-                        <p class="service-name">LABORATORIO</p>
-                        <img src="img/Laboratorio.png" alt="Laboratorio">
-                        <div class="hover-galery"></div>
+                    <a href="laboratorio.html" class="service-card">
+                        <div class="service-image-wrapper">
+                            <img src="img/Laboratorio.png" alt="Laboratorio">
+                            <div class="service-overlay"></div>
+                        </div>
+                        <div class="service-content">
+                            <div class="service-icon">
+                                <i class="fas fa-flask"></i>
+                            </div>
+                            <h3 class="service-name">LABORATORIO</h3>
+                            <p class="service-description">Análisis clínicos y diagnósticos</p>
+                            <span class="service-link">Ver más <i class="fas fa-arrow-right"></i></span>
+                        </div>
                     </a>
-                    <a href="cirugia.html" class="imagen-port">
-                        <p class="service-name">CIRUGÍA</p>
-                        <img src="img/Cirugia.png" alt="Cirugia">
-                        <div class="hover-galery"></div>
+                    <a href="cirugia.html" class="service-card">
+                        <div class="service-image-wrapper">
+                            <img src="img/Cirugia.png" alt="Cirugia">
+                            <div class="service-overlay"></div>
+                        </div>
+                        <div class="service-content">
+                            <div class="service-icon">
+                                <i class="fas fa-user-md"></i>
+                            </div>
+                            <h3 class="service-name">CIRUGÍA</h3>
+                            <p class="service-description">Procedimientos quirúrgicos especializados</p>
+                            <span class="service-link">Ver más <i class="fas fa-arrow-right"></i></span>
+                        </div>
                     </a>
-                    <a href="transporte.html" class="imagen-port">
-                        <p class="service-name">TRANSPORTE</p>
-                        <img src="img/Transporte.png" alt="Transporte">
-                        <div class="hover-galery"></div>
+                    <a href="transporte.html" class="service-card">
+                        <div class="service-image-wrapper">
+                            <img src="img/Transporte.png" alt="Transporte">
+                            <div class="service-overlay"></div>
+                        </div>
+                        <div class="service-content">
+                            <div class="service-icon">
+                                <i class="fas fa-ambulance"></i>
+                            </div>
+                            <h3 class="service-name">TRANSPORTE</h3>
+                            <p class="service-description">Servicio de transporte especializado</p>
+                            <span class="service-link">Ver más <i class="fas fa-arrow-right"></i></span>
+                        </div>
                     </a>
-                    <a href="animales-exoticos.html" class="imagen-port">
-                        <p class="service-name">ATENCIÓN ANIMALES EXÓTICOS</p>
-                        <img src="img/exoticos.png" alt="Animales exoticos">
-                        <div class="hover-galery"></div>
+                    <a href="animales-exoticos.html" class="service-card">
+                        <div class="service-image-wrapper">
+                            <img src="img/exoticos.png" alt="Animales exoticos">
+                            <div class="service-overlay"></div>
+                        </div>
+                        <div class="service-content">
+                            <div class="service-icon">
+                                <i class="fas fa-dove"></i>
+                            </div>
+                            <h3 class="service-name">ANIMALES EXÓTICOS</h3>
+                            <p class="service-description">Atención especializada para especies exóticas</p>
+                            <span class="service-link">Ver más <i class="fas fa-arrow-right"></i></span>
+                        </div>
                     </a>
-                    <a href="limpieza-dental.html" class="imagen-port">
-                        <p class="service-name">LIMPIEZA DENTAL</p>
-                        <img src="img/Limpieza.png" alt="Limpieza Dental">
-                        <div class="hover-galery"></div>
+                    <a href="limpieza-dental.html" class="service-card">
+                        <div class="service-image-wrapper">
+                            <img src="img/Limpieza.png" alt="Limpieza Dental">
+                            <div class="service-overlay"></div>
+                        </div>
+                        <div class="service-content">
+                            <div class="service-icon">
+                                <i class="fas fa-tooth"></i>
+                            </div>
+                            <h3 class="service-name">LIMPIEZA DENTAL</h3>
+                            <p class="service-description">Cuidado dental profesional</p>
+                            <span class="service-link">Ver más <i class="fas fa-arrow-right"></i></span>
+                        </div>
                     </a>
                 </div>
             </div>
         </section>
- <footer class="footer">
-        <div class="waves">
-            <div class="wave" id="wave1"></div>
-            <div class="wave" id="wave2"></div>
-            <div class="wave" id="wave3"></div>
-            <div class="wave" id="wave4"></div>
-        </div>
-    
+<footer class="footer">
+    <div class="footer-container">
         <div class="footer-content">
-            <div class="company-photo">
-                <img src="img/empresa.jpg" alt="Foto de la empresa">
-            </div>
-    
-          <div class="footer-column">
-                <h3>Enlaces Rápidos</h3>
-                <ul class="menu">
-                    <li class="menu__item"><a class="menu__link" href="index.html">Inicio</a></li>
-                    <li class="menu__item"><a class="menu__link" href="servicios.html">Servicios</a></li>
-                    <li class="menu__item"><a class="menu__link" href="consejos.html">Consejos para tu mascota</a></li>
-                    <li class="menu__item"><a class="menu__link" href="contacto.html">Contáctanos</a></li>
-                </ul>
-            </div>
-    
-            <div class="footer-column">
-                <h3>Síguenos</h3>
-                <div class="social-media">
-                    <a href="https://www.facebook.com/VeteSanMartindePorres/" class="social-icon__link" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
-                    <a href="https://www.instagram.com/vetesanmartindeporres_cr/" class="social-icon__link" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
-                    <a href="https://www.tiktok.com/@vetsanmartindeporres" class="social-icon__link" target="_blank"><ion-icon name="logo-tiktok"></ion-icon></a>
+            <div class="footer-brand">
+                <div class="brand-info">
+                    <img src="img/empresa.jpg" alt="Veterinaria San Martin" class="footer-logo" loading="lazy">
+                    <div class="brand-text">
+                        <h3>Veterinaria San Martin de Porres</h3>
+                        <p>Cuidando la salud y bienestar de tus mascotas con amor y profesionalismo.</p>
+                    </div>
                 </div>
             </div>
-    
-            <div class="footer-column">
-                <h3>Contáctanos</h3>
-                <p>Dirección: 150 metros este del Mall, Zona Centro, San José, Desamparados, San Rafael Abajo</p>
-                <p>Teléfono: 4000 1365</p>
-                <p>Email: info@vetsanmartin.com</p>
+            
+            <div class="footer-section">
+                <h4>Enlaces</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="consejos.html">Consejos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Contacto</h4>
+                <div class="contact-info">
+                    <p><i class="fas fa-map-marker-alt"></i> 150 metros este del Mall, Zona Centro</p>
+                    <p><i class="fas fa-phone"></i> 4000 1365</p>
+                    <p><i class="fas fa-envelope"></i> info@vetsanmartin.com</p>
+                    <p><i class="fas fa-clock"></i> Horarios de Atención</p>
+                    <div class="schedule-details">
+                        <p>Lunes-Sábado: 8:00 a.m a 8:00 p.m</p>
+                        <p>Domingo: 10:00 a.m a 8:00 p.m</p>
+                        <p>Emergencias a partir de 8:00 p.m a 12:00 a.m</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Síguenos</h4>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/VeteSanMartindePorres/" target="_blank" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/vetesanmartindeporres_cr/" target="_blank" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@vetsanmartindeporres" target="_blank" aria-label="TikTok">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                    <a href="https://api.whatsapp.com/send?phone=50686123030" target="_blank" aria-label="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
             </div>
         </div>
-    
-        <p style="opacity: 0.75;">&copy; 2024 Veterinaria San Martin de Porres | Todos los derechos reservados.</p>
-    </footer>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 Veterinaria San Martin de Porres. Todos los derechos reservados.</p>
+            <div class="footer-legal">
+                <a href="#">Política de Privacidad</a>
+                <a href="#">Términos de Uso</a>
+            </div>
+        </div>
+    </div>
+</footer>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="javascript/index.js"></script>
